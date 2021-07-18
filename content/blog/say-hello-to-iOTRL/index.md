@@ -1,20 +1,14 @@
 ---
-title: "Introduction"
-description: An Open Source Community for Internet of Things and Embedded Device Security. Learn, Lend, and Lease iOT devices in support of independent security research."
-lead: An Open Source Community for Internet of Things and Embedded Device Security. Learn, Lend, and Lease iOT devices in support of independent security research."
-date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+title: "Say hello to iOTRL 👋"
+description: "Introducing iOTRL, an Open Source Community for iOT and Embedded Device Security"
+lead: "Introducing iOTRL, an Open Source Community for iOT and Embedded Device Security"
+date: 2020-11-04T09:19:42+01:00
+lastmod: 2020-11-04T09:19:42+01:00
 draft: false
-images: []
-menu:
-  docs:
-    parent: "prologue"
-weight: 100
-toc: true
+weight: 50
+images: ["say-hello-to-doks.png"]
+contributors: ["Tyler Butler"]
 ---
-
-- [Research Library →]({{< relref "library" >}})  
-
 
 ## Humble Begginings
 
@@ -37,4 +31,3 @@ Whether you're a seasoned researcher who just published your latest Defcon talk 
 ## Roadmap  
 
 This site, just like this project, is a work in progress. Expect rapid changes over the course of the year. If you're interested in learning more about the roadmap, or want to contribute to the project, reach out to Tyler on [twitter](https://twitter.com/tbutler0x90).  
-

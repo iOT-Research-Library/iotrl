@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "iOTRL"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "iOT Research Library (iOTRL)"
+description = "An Open Source Community for iOT and Embedded Device Security"
 
 ## Open Graph
 images = ["doks.png"]
@@ -13,8 +13,8 @@ domainTLD = "doks.netlify.app"
 titleHome = "Doks Theme"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@iotrl"
+twitterCreator = "@tbutler0x90"
 
 ## JSON-LD
 # schemaType = "Person"
@@ -50,8 +50,8 @@ portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+footer = "Founded by <a class=\"alert-link\" href=\"https://tbutler.org\">Tyler Butler</a>"
+copyRight = ""
 
 # Alert
 alert = false
