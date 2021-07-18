@@ -1,2 +1,2 @@
-baseurl = "http://iotrl.org/"
+baseurl = "https://iotrl.org/"
 canonifyURLs = true
