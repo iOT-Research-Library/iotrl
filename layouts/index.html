@@ -7,32 +7,79 @@
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
       <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | relURL }}" role="button">Get Involved</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/doks/master/package.json" }}{{ $data.version }}</a></p>
+      <p class="meta">Open-source MIT Licensed </p>
     </div>
   </div>
 </section>
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
+
+<div class="d-flex justify-content-start">
+  <div class="bg-dots"></div>
+</div>
+
 <section class="section section-sm">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
-        <h2 class="h4">Learn</h2>
-        <p>iOTRL is an indepenent security research project focused on publishing iOT and embedded device security advisories and resources for researchers.</p>
+        <h2 class="h4"><i class="fab fa-leanpub"></i> Learn</h2>
+        <p>iOTRL is an indepenent security research project focused on publishing iOT and embedded device security research</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Lend</h2>
+        <h2 class="h4"><i class="fas fa-hands-helping"></i> Lend</h2>
         <p>Security researchers who are finished studying a particular iOT device are welcome to add their product to the catolog for the community</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Lease</h2>
-        <p>Check out the catalog of available devices, get in touch with the current owning researcher and make plans to find your next CVE!</p>
+        <h2 class="h4"><i class="fas fa-bug"></i> Lease</h2>
+        <p>Check out the <a href="/docs/library/">catalog</a> of available devices, get in touch with the current owning researcher and make plans to find your next CVE!</p>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
+
+{{ define "research" }}
+<section class="section section-sm mt-4 pt-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <h2 class="h3 mt-3 text-center">Latest Research</h2>
+        <div class="card-list">
+        {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "research")  -}}
+        <div class="card">
+          <div class="card-body">
+            <h3><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
+            <p>{{ .Params.lead | safeHTML }}</p>
+            {{ partial "main/blog-meta.html" . -}}
+          </div>
+        </div>
+        {{ end -}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{ define "test" }}
+<section class="section section-md mt-1 bg-light">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-center mt-n3">
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4"><i class="fas fa-shield-alt"></i></p>
+        <h2 class="h4 mt-0">Giving Back to the InfoSec Community </h2>
+        <p>As iOTRL grows, a major focus of the project will be giving back to the community. Expect in-depth guides, resources, and mentorship opportunities.</p>
+      </div>
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4">📨</p>
+        <h2 class="h4 mt-0">Want to get involved? Send an email to <a href="mailto:tyler@iotrl.org">tyler@iotrl.org</a></h2>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end}}
 
 {{ define "sidebar-footer" }}
 <section class="section section-sm container-fluid">

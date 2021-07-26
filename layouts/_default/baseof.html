@@ -20,6 +20,8 @@
       </div>
     </div>
     {{ block "sidebar-prefooter" . }}{{ end }}
+    {{ block "test" . }}{{ end }}
+    {{ block "research" . }}{{ end }}
     {{ block "sidebar-footer" . }}{{ end }}
     {{ partial "footer/footer.html" . }}
     {{ if and .IsHome .Site.Params.alert }}
